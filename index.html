@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators Example</title>
+    <style>
+        /* Descendant combinator */
+        .nav-bar a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Child combinator */
+        .content > p {
+            font-style: italic;
+        }
+
+        /* Adjacent sibling combinator */
+        .content + .footer {
+            background-color: #eee;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar with a link -->
+    <div class="nav-bar">
+        <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+    </div>
+
+    <!-- Content with a paragraph -->
+    <div class="content">
+        <p>This is the content of the page.</p>
+    </div>
+
+    <!-- Footer with a link to YouTube -->
+    <div class="footer">
+        <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+    </div>
+
+</body>
+</html>
