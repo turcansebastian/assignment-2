@@ -6,20 +6,41 @@
     <title>Combinators Example</title>
     <style>
         /* Descendant combinator */
+        .nav-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
         .nav-bar a {
             color: #333;
             text-decoration: none;
         }
 
         /* Child combinator */
+        .content {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
         .content > p {
             font-style: italic;
         }
 
         /* Adjacent sibling combinator */
+        .footer {
+            background-color: #ccc;
+            padding: 15px;
+        }
+
         .content + .footer {
             background-color: #eee;
             padding: 10px;
+        }
+
+        /* Link styles */
+        .footer a {
+            color: #333;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -37,7 +58,8 @@
 
     <!-- Footer with a link to YouTube -->
     <div class="footer">
-        <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+        <p>Visit our YouTube channel:</p>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
     </div>
 
 </body>
